@@ -1,5 +1,5 @@
 {
-  "name": "ai-network-topology-visualizer-v3",
+  "name": "ai-network-topology-visualizer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,10 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react": "^19.1.0",
     "@google/genai": "^1.9.0",
-    "cytoscape": "^3.32.1",
     "d3": "^7.9.0"
   },
   "devDependencies": {

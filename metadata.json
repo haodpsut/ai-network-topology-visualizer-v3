@@ -1,6 +1,5 @@
 {
-  "name": "AI Network Topology Visualizer v3",
-  "description": "An AI-powered application that generates and visualizes network topologies based on user descriptions. Describe your network, and the AI will create a detailed diagram with devices, connections, and IP addressing using Cytoscape.js.",
-  "requestFramePermissions": [],
-  "prompt": ""
+  "name": "AI Network Topology Visualizer",
+  "description": "An application that uses AI to generate and visualize network topologies from a natural language description. Describe your network, and see a dynamic graph representation of it.",
+  "requestFramePermissions": []
 }

@@ -1,31 +1,18 @@
 
-export type DeviceType = 'router' | 'switch' | 'pc' | 'server' | 'firewall' | 'cloud' | 'subnet';
+export type NodeType = "router" | "switch" | "server" | "pc" | "cloud" | "firewall" | "unknown";
 
-export interface CytoscapeNodeData {
+export interface Node {
   id: string;
-  label: string;
-  type: DeviceType;
-  ip?: string;
-  parent?: string;
+  name: string;
+  type: NodeType;
 }
 
-export interface CytoscapeEdgeData {
-  id: string;
+export interface Link {
   source: string;
   target: string;
-  sourceLabel: string;
-  targetLabel: string;
-  sourceIp?: string;
-  targetIp?: string;
-  label?: string;
 }
 
-export interface CytoscapeData {
-  nodes: { data: CytoscapeNodeData }[];
-  edges: { data: CytoscapeEdgeData }[];
-}
-
-export interface AIResponse {
-  description: string;
-  cytoscapeData: CytoscapeData;
+export interface TopologyData {
+  nodes: Node[];
+  links: Link[];
 }
